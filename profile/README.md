@@ -84,14 +84,14 @@ Os projetos da DevHub estão em repositórios privados, por envolverem documenta
         <img src="https://github.com/Samuelf27.png" width="84" alt="Samuel Ferreira"><br>
         <sub><b>Samuel Ferreira</b></sub>
       </a><br>
-      <sub>Desenvolvimento full-stack</sub>
+      <sub>Desenvolvedor full-stack</sub>
     </td>
     <td align="center" width="140">
       <a href="https://github.com/paulosardinha">
         <img src="https://github.com/paulosardinha.png" width="84" alt="Paulo Sardinha"><br>
         <sub><b>Paulo Sardinha</b></sub>
       </a><br>
-      <sub>Desenvolvimento</sub>
+      <sub>Desenvolvedor full-stack</sub>
     </td>
   </tr>
 </table>
