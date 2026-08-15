@@ -1,0 +1,102 @@
+<svg width="1600" height="400" viewBox="0 0 1600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#F4F7FA"/>
+      <stop offset="1" stop-color="#EDF2F7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E7C7B"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <radialGradient id="glowR" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#2DD4BF" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreB" cx="0.38" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#E8FFFB"/>
+      <stop offset="0.45" stop-color="#7BEDE0"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="400" fill="url(#bg)"/>
+
+  <!-- grade de pontos sutil, lado direito -->
+  <g fill="#A6B8C9" opacity="0.5">
+    <g id="dotrow">
+      <circle cx="900"  cy="40" r="2"/><circle cx="960"  cy="40" r="2"/><circle cx="1020" cy="40" r="2"/>
+      <circle cx="1080" cy="40" r="2"/><circle cx="1140" cy="40" r="2"/><circle cx="1200" cy="40" r="2"/>
+      <circle cx="1260" cy="40" r="2"/><circle cx="1320" cy="40" r="2"/><circle cx="1380" cy="40" r="2"/>
+      <circle cx="1440" cy="40" r="2"/><circle cx="1500" cy="40" r="2"/><circle cx="1560" cy="40" r="2"/>
+    </g>
+    <use href="#dotrow" y="60"/>
+    <use href="#dotrow" y="120"/>
+    <use href="#dotrow" y="180"/>
+    <use href="#dotrow" y="240"/>
+    <use href="#dotrow" y="300"/>
+  </g>
+
+  <!-- constelacao do hub, lado direito -->
+  <circle cx="1245" cy="200" r="190" fill="url(#glowR)"/>
+  <g stroke="#0E7C7B" stroke-width="8" stroke-linecap="round" opacity="0.95">
+    <line x1="1245" y1="200" x2="1345" y2="200"/>
+    <line x1="1245" y1="200" x2="1295" y2="113.4"/>
+    <line x1="1245" y1="200" x2="1195" y2="113.4"/>
+    <line x1="1245" y1="200" x2="1145" y2="200"/>
+    <line x1="1245" y1="200" x2="1195" y2="286.6"/>
+    <line x1="1245" y1="200" x2="1295" y2="286.6"/>
+  </g>
+  <path d="M1345 200 L1295 113.4 L1195 113.4 L1145 200 L1195 286.6 L1295 286.6 Z"
+        fill="none" stroke="#0E7C7B" stroke-width="5" opacity="0.45"/>
+  <!-- conexoes estendidas a nos satelites -->
+  <g stroke="#0E7C7B" stroke-width="4" opacity="0.5">
+    <line x1="1345" y1="200" x2="1462" y2="152"/>
+    <line x1="1295" y1="113.4" x2="1372" y2="58"/>
+    <line x1="1195" y1="286.6" x2="1116" y2="345"/>
+    <line x1="1145" y1="200" x2="1042" y2="238"/>
+  </g>
+  <g fill="url(#node)">
+    <circle cx="1345" cy="200" r="21"/>
+    <circle cx="1295" cy="113.4" r="21"/>
+    <circle cx="1195" cy="113.4" r="21"/>
+    <circle cx="1145" cy="200" r="21"/>
+    <circle cx="1195" cy="286.6" r="21"/>
+    <circle cx="1295" cy="286.6" r="21"/>
+  </g>
+  <g fill="none" stroke="#F4F7FA" stroke-width="4">
+    <circle cx="1345" cy="200" r="21"/>
+    <circle cx="1295" cy="113.4" r="21"/>
+    <circle cx="1195" cy="113.4" r="21"/>
+    <circle cx="1145" cy="200" r="21"/>
+    <circle cx="1195" cy="286.6" r="21"/>
+    <circle cx="1295" cy="286.6" r="21"/>
+  </g>
+  <!-- satelites menores -->
+  <g fill="#2DD4BF" opacity="0.85">
+    <circle cx="1462" cy="152" r="9"/>
+    <circle cx="1372" cy="58" r="9"/>
+    <circle cx="1116" cy="345" r="9"/>
+    <circle cx="1042" cy="238" r="9"/>
+  </g>
+  <!-- nucleo -->
+  <circle cx="1245" cy="200" r="42" fill="#F4F7FA"/>
+  <circle cx="1245" cy="200" r="36" fill="url(#coreB)"/>
+
+  <!-- wordmark -->
+  <text x="96" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="104" font-weight="600"
+        fill="#16202E" letter-spacing="-2">Dev<tspan fill="#0E8F86">Hub</tspan></text>
+  <rect x="100" y="224" width="300" height="6" rx="3" fill="url(#accent)"/>
+  <text x="100" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="400"
+        fill="#4A5D70">Software sob medida para pequenas e médias empresas</text>
+  <text x="100" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600"
+        fill="#7A8CA0" letter-spacing="2">AUTOMAÇÃO · IA APLICADA A ATENDIMENTO · DO CÓDIGO AO DEPLOY</text>
+
+  <!-- fio de luz na base -->
+  <rect x="0" y="396" width="1600" height="4" fill="url(#accent)" opacity="0.9"/>
+</svg>
